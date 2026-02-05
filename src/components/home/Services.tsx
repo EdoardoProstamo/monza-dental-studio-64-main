@@ -10,7 +10,14 @@ const serviceImages: Record<string, string> = {
   "odontoiatria-generale": serviceGeneral,
   implantologia: serviceImplants,
   ortodonzia: serviceOrthodontics,
+
+  // ✅ nuove immagini caricate da public/img
+  "protesi-dentali": "/img/protesi-dentali.jpg",
+  endodonzia: "/img/endodonzia.jpg",
+  "igiene-orale": "/img/igiene-e-prevenzione.jpg",
+  "estetica-dentale": "/img/estetica-dentale.jpg",
 };
+
 
 const serviceIcons: Record<string, JSX.Element> = {
   tooth: (

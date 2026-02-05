@@ -10,6 +10,12 @@ const serviceImages: Record<string, string> = {
   "odontoiatria-generale": serviceGeneral,
   implantologia: serviceImplants,
   ortodonzia: serviceOrthodontics,
+
+  // ✅ nuove immagini caricate da public/img
+  "protesi-dentali": "/img/protesi-dentali.jpg",
+  endodonzia: "/img/endodonzia.jpg",
+  "igiene-orale": "/img/igiene-e-prevenzione.jpg",
+  "estetica-dentale": "/img/estetica-dentale.jpg",
 };
 
 const Servizi = () => {
@@ -36,9 +42,8 @@ const Servizi = () => {
               <article
                 key={service.id}
                 id={service.id}
-                className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${
-                  index % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""
+                  }`}
               >
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   {serviceImages[service.id] ? (
